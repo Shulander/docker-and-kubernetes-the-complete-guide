@@ -1,0 +1,10 @@
+version: "3"
+services:
+  java-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+#    image: shulander/helloworld
+    ports:
+      - "8080:8080"
+    restart: always
