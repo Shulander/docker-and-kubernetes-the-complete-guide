@@ -7,8 +7,6 @@ COPY gradle $BUILD_APP_HOME/gradle
 COPY src ./src
 
 RUN chmod +x gradlew && ./gradlew clean build --info
-RUN pwd
-RUN ls /tmp/build/build/libs
 
 FROM openjdk:17-jdk-slim as app
 
