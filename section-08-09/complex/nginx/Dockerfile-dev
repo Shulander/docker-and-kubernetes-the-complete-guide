@@ -1,0 +1,4 @@
+FROM nginx
+LABEL authors="hvicentini"
+
+COPY ./default.conf /etc/nginx/conf.d/default.conf
